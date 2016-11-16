@@ -1,0 +1,24 @@
+NRF24L01
+	VCC<->3V3
+	GND<->GND
+	CE<->D8
+	CSN<->D7
+	MOSI<->D11
+	MISO<->D12
+	SCK<->D13
+---------------------------
+|GND VCC       ==========||
+|CE  CSN              I==I|
+|SCK MOSI             I   |
+|MISO IRQ             I==I|
+|                        I|
+|                     ===I|
+---------------------------
+
+Motors
+	THROTTLE<->D2
+	RUDDER<->D5
+	ALIERON<->D3
+	ELEVATOR<->D4
+
+format of Rdata[]: THROTTLE RUDDER ALIERON ELEVATOR

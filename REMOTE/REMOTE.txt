@@ -1,0 +1,39 @@
+Throttle & Rudder
+	VCC<->5V
+ 	GND<->GND
+	X<->A0
+	Y<->A1
+
+Alieron & Elevator
+	VCC<->5V
+	GND<->GND
+	X<->A3
+	Y<->A2
+
+Aux1 & Aux2
+	X<->A6
+	Y<->A7
+
+NRF24L01
+	VCC<->3V3
+	GND<->GND
+	CE<->D8
+	CSN<->D10
+	MOSI<->D11
+	MISO<->D12
+	SCK<->D13
+---------------------------
+|GND VCC       ==========||
+|CE  CSN              I==I|
+|SCK MOSI             I   |
+|MISO(IRQ)            I==I|
+|                        I|
+|                     ===I|
+---------------------------
+
+LCD Screen
+	RST<->D4
+	CE<->D5
+	DC<->D6
+	DiN<->D7
+	CLK<->D9

@@ -7,6 +7,11 @@
 #define MAXPWR 2000
 #define MINPWR 990
 
+#define THRmid 505
+#define RUDmid 508
+#define AILmid 506
+#define ELEmid 505
+
 typedef struct
 {
   short THR, RUD, AIL, ELE;
@@ -38,9 +43,9 @@ void setup()
 void loop()
 {
   Motor final;
-  final.THR = analogRead(A0); //Throttle
-  final.RUD = analogRead(A1); //Rudder
-  final.AIL = analogRead(A2); //Aileron
-  final.ELE = analogRead(A3); //Elevator
+  final.THR = analogRead(A0) + (512 - THRmid); //Throttle
+  final.RUD = analogRead(A1) + (512 - RUDmid); //Rudder
+  final.AIL = analogRead(A2) + (512 - AILmid); //Aileron
+  final.ELE = analogRead(A3) + (512 - ELEmid); //Elevator
   Sends(&final);
 }

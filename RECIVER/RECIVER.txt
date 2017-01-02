@@ -21,4 +21,6 @@ Motors
 	ALIERON<->D3
 	ELEVATOR<->D4
 
+Lights
+	D10
 format of Rdata[]: THROTTLE RUDDER ALIERON ELEVATOR

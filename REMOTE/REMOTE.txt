@@ -10,9 +10,8 @@ Alieron & Elevator
 	X<->A3
 	Y<->A2
 
-Aux1 & Aux2
-	X<->A6
-	Y<->A7
+Light
+	D2
 
 NRF24L01
 	VCC<->3V3
@@ -31,9 +30,8 @@ NRF24L01
 |                     ===I|
 ---------------------------
 
-LCD Screen
-	RST<->D4
-	CE<->D5
-	DC<->D6
-	DiN<->D7
-	CLK<->D9
+LCD1602_I2C
+	VCC<->5V
+	GND<->GND
+	SDA<->A4
+	SCL<->A5
